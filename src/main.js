@@ -21,6 +21,14 @@ search.addEventListener("click", () => {
             item.name.common.toLowerCase() === country.toLowerCase()
         );
         if (country_Info) {
+          if (
+            country_Info.name.official.toLowerCase() ===
+              "palestine".toLowerCase() ||
+            country_Info.name.official.toLowerCase() ===
+              "State of Palestine".toLowerCase()
+          ) {
+            country_Info.capital[0] = "Jerusalem";
+          }
           div.style.opacity = "1";
           div.innerHTML = `
         <img src="${country_Info.flags.png}" alt="${country_Info.flags.alt}" />
