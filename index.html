@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Country Explorer</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Know Your Country</h1>
+      <p>
+        This website lets users search for any country by name. Upon entering
+        the country's name, it displays key details such as the country's flag,
+        capital, population, and the region it is located in.
+      </p>
+      <div class="box-search">
+        <input type="text" placeholder="Enter Any Country " />
+        <button
+          id="search"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Search
+        </button>
+      </div>
+      <div class="info"></div>
+    </div>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
